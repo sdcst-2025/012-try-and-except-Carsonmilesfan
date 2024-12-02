@@ -21,3 +21,18 @@ The square root of 3.0 is 1.7320508075688772
 """
 import math
 
+sigma = input("enter a number =>")
+
+try:
+    beta = float(sigma)
+    print("that is a valid number sir")
+    try:
+        alpha = math.sqrt(beta)
+        print(f"the square root of {beta} is {alpha}")
+    except:
+        print("there is no valid square root sir")
+except:
+    print("that is not a valid number sir")
+    print("there is no square root sir")
+    
+

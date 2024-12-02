@@ -19,3 +19,12 @@ The reciprocal of 3 is 0.3333333333333333
 Enter a number: 4
 The reciprocal of 4 is 0.25
 """
+
+fella = input("enter a number=> ")
+
+try:
+    fella = float(fella)
+    nifella = 1 / fella
+    print(f"the reciprocol of {fella} is {nifella}")
+except:
+    print("that number is wrong, you entered a BAD number")

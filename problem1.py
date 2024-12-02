@@ -32,3 +32,29 @@ os.system('cls')
 
 print("Enter in the coefficients for a quadratic equation in the format:")
 print("  ax^2 + bx + c = 0")
+
+import math
+ 
+sixseven = input("a => ")
+highway = input("b => ")
+driveway = input("c => ")
+
+print(f"your equation is -> {sixseven}x^2 + {highway}x + {driveway}")
+
+try:
+  seven = float(sixseven)
+  way = float(highway)
+  drive = float(driveway)
+except:
+  print("invalid input from the user, please try again")
+  exit()
+
+try:
+  MRBLUEYOUDIDITRIGHT = (-way + (math.sqrt((way)**2 - (4*seven*drive)))) / (2*seven)
+  BUTHERECOMESMRNIGHT = (-way - (math.sqrt((way)**2 - (4*seven*drive)))) / (2*seven)
+  HANDISONYOURSHOULDER = round(MRBLUEYOUDIDITRIGHT, 2)
+  NEVERMIND = round(BUTHERECOMESMRNIGHT, 2)
+  print(f"yor roots are {HANDISONYOURSHOULDER} and {NEVERMIND}")
+except:
+  print("there are no real roots to this equation")
+
